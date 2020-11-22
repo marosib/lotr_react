@@ -355,7 +355,6 @@ footer {
 
 /*Movies-------------------------------------------------------------------------------------------------------------------------------------------*/
 .movies {
-  min-height: 100%;
   width: 90%;
   display: flex;
   justify-content: space-around;
@@ -445,3 +444,105 @@ footer {
 
 
 /*Media queries*/
+@media only screen and (max-width: 1240px) {
+header button {
+  display: none;
+}
+header .hamburger {
+  display: block;
+}
+header {
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.frodo {
+  height: 50%;
+}
+.welcome .greet h1 {
+  text-align: center;
+}
+
+.cards {
+  grid-template-columns: repeat(2, 45%);
+  justify-content: center;
+}
+
+.movies {
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+.lotr {
+  width: 80%;
+  height: 700px;
+  margin: 30px 0;
+}
+.hobbit {
+  width: 80%;
+  height: 700px;
+  margin: 30px 0;
+}
+}
+
+@media only screen and (max-width: 540px) {
+  .logo {
+    width: 150px;
+  }
+  header .hamburger {
+    width: 30px;
+    height: 30px;
+  }
+
+  .welcome {
+    flex-direction: column;
+  }
+  .welcome .greet h1{
+    font-size: 22px;
+  }
+  .welcome .greet h3{
+    font-size: 16px;
+  }
+  .welcome .greet p{
+    font-size: 16px;
+  }
+  .pic {
+    height: 50%;
+  }
+  .frodo {
+    height: 80%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 80%);
+    justify-content: center;
+  }
+
+  .series h1 {
+    font-size: 22px;
+  }
+  .series p {
+    font-size: 16px;
+  }
+  .datas {
+    width: 90%;
+  }
+  .data h1 {
+    font-size: 22px;
+  }
+  .data p {
+    font-size: 16px;
+  }
+  .movie img {
+    height: 100px;
+  }
+  .lotr {
+    width: 90%;
+    height: 450px;
+    margin: 30px 0;
+  }
+  .hobbit {
+    width: 90%;
+    height: 450px;
+    margin: 30px 0;
+  }
+}

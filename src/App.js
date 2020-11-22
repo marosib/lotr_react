@@ -13,11 +13,11 @@ import x from './img/x.png';
 import NavBar from './components/NavBar';
 
 function App() {
-  const [whichPage,setWhichPage] = useState('home');
-  const [characters,setCharacters] = useState([]);
-  const [movies,setMovies] = useState([]);
-  const [navMenu,setNavMenu] = useState(menu);
-  const [scale,setScale] = useState(0);
+  const [whichPage, setWhichPage] = useState('home');
+  const [characters, setCharacters] = useState([]);
+  const [movies, setMovies] = useState([]);
+  const [navMenu, setNavMenu] = useState(menu);
+  const [scale, setScale] = useState(0);
 
   useEffect(() => {
     getCharacters()
@@ -57,7 +57,7 @@ function App() {
       setScale(1) };
     if (navMenu === x) { setNavMenu(menu)
       setScale(0) }
-  }
+  };
 
   return (
     <div className="App">
