@@ -40,11 +40,6 @@ function App() {
     const data = await response.json();
     setMovies(data.docs);
   };
-
-  useEffect(() => {
-    backgroundSetter()
-  },[whichPage]);
-
   const backgroundSetter = () => {
     if(whichPage === 'home') { return Wbg};
     if(whichPage === 'chars') { return Cbg};
@@ -75,7 +70,6 @@ function App() {
         {whichPage === 'movies' && <Movies movies={movies} />}
       </div>
       <footer>
-        <h1></h1>
       </footer>
     </div>
   );
