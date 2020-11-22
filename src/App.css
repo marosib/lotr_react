@@ -63,7 +63,68 @@ header button:hover {
 header button:hover::before {
   transform: scaleY(1);
 }
+header .hamburger {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #b7a234;
+  transform: rotateZ(90deg);
+  border: solid 1px #e4edea;
+  transition: all 1s ease;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 1);
+  display: none;
+}
+header .hamburger:hover {
+  background-color: #473f16;
+  border: solid 1px #b7a234;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 1);
+}
 
+/*Navigation bar buttons*/
+.nav-bar {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  top: 10vh;
+  left: 0;
+  transform-origin: top;
+  background-color: rgba(71, 63, 22,0.75);
+  box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 1);
+  transition: all 1s ease;
+}
+.nav-bar button {
+  position: relative;
+  font-size: 36px;
+  font-family: 'Bilbo', cursive;
+  border: none;
+  outline: none;
+  background: none;
+  color: #b7a234;
+  cursor: pointer;
+}
+.nav-bar button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top: #b7a234 solid 1px;
+  border-bottom: #b7a234 solid 1px;
+  transition: all 0.5s ease;
+  transform: scaleY(0);
+}
+.nav-bar button:hover {
+  color: #e4edea;
+}
+.nav-bar button:hover::before {
+  transform: scaleY(1);
+}
 
 .center {
   box-shadow: inset 0px 0px 50px 20px rgba(0, 0, 0, 1);
@@ -374,10 +435,13 @@ footer {
 .datas {
   text-align: center;
   height: 30%;
-  width: 50%;
+  width: 70%;
 }
 .data {
   background-color: rgba(183, 162, 52, 0.75);
   border-radius: 30px;
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 1);
 }
+
+
+/*Media queries*/
